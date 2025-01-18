@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link do font awesome para icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" href="src/images/nutrition.png" type="image/x-icon">
+    <title>Nutricionista - LP Exemplo</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-brands fa-nutritionix" id="nav_logo"> 
+                <span class="font-brand">Claudia Daltro</span> 
+              </i>
+              
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+
+            </ul>
+
+            <button class="btn-default">
+                <i class="fa-brands fa-whatsapp" style="padding-right: 10px;"></i>
+                  WhatsApp
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>                
+            </button>
+        </nav>
+        <!--Fim da barra de navegação-->
+
+
+        <!--Menu mobile-->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+            </ul>
+            
+            <button class="btn-default">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </button>
+
+        </div>
+    </header>
+
+
+    <main id="content">
+        <section id="home">
+            <div id="shape"></div>
+            <div id="cta"> <!--Lado esquerdo - call to action-->
+                <h1 class="title">
+                    Uma jornada saudável começa com uma <span>escolha!</span>
+                </h1>
+
+                <p class="description">"Cada escolha alimentar é um passo para transformar sua saúde e bem-estar. Vamos juntos criar uma rotina equilibrada e sustentável, colocando seu cuidado em primeiro lugar."</p>
+
+                <div id="cta_buttons"> <!--Links do call to action-->
+                    <a href="#tel:+51995859273" class="btn-default">
+                        Agende sua consulta 
+                    </a>
+                </div>
+
+                <div class="social_media_buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner"> <!--Lado direito - banner, foto-->
+                <img src="src/images/nutricionista2.png" alt="Foto nutricionista">
+            </div>
+
+            
+        </section>
+
+        <section id="menu">
+            <!--<h2 class="section-title">Cardápio</h2>-->
+            <h3 class="section-subtitle">Nossos serviços</h3>
+            <div id="dishes">
+                <div class="dish">
+                    <img src="src/images/acompanhamento-nutricional.jpg"  alt="mulher mostrando sua evolução no emagrecimento">
+
+                    <h3 class="dish-title">Acompanhamento nutricional</h3>
+                    
+                    <span class="dish-description">Esteja sempre no caminho certo com suporte contínuo para alcançar suas metas de saúde.</span>
+
+                    <button class="btn-default">
+                        Inicie sua jornada
+                    </button>
+                    
+                </div>
+                <div class="dish">
+                    <img src="src/images/balanca.jpg" alt="Balança de medição de peso, usada para avaliação nutricional">
+
+                    <h3 class="dish-title">Avaliação nutricional </h3>
+                    <span class="dish-description">Entenda seu estado de saúde e suas necessidades alimentares por meio de uma avaliação completa e personalizada.</span>
+
+                    <button class="btn-default">
+                        Inicie sua jornada
+                    </button>
+                    
+                </div>
+                <div class="dish">
+                    <img src="src/images/consulta-online-presenciais.jpg" class="dish-image" alt="mação entrelaçada numa fita">
+
+                    <h3 class="dish-title">Consultas online e presenciais</h3>
+                    
+                    <span class="dish-description">Cada consulta é personalizada para atender às suas necessidades e objetivos de forma prática e eficaz. </span>
+
+                    <button class="btn-default">
+                        Inicie sua jornada
+                    </button>
+                    
+                </div>
+                <div class="dish">
+                    <img src="src/images/nutrição-esportiva.jpg" class="dish-image" alt="nutrição esportiva">
+
+                    <h3 class="dish-title">Nutrição esportiva</h3>
+                    
+                    <span class="dish-description">Esteja sempre no caminho certo com suporte contínuo para alcançar suas metas de saúde.</span>
+
+                    <button class="btn-default">
+                        Inicie sua jornada
+                    </button>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/DEPOIMENTOS 1.jpg" id="testimonial_chef" alt="livro de receitas">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/person-people-girl-woman-hair-photography-1401787-pxhere.com.jpg" class="feedback-avatar" alt="foto de perfil das avaliações">
+
+                        <div class="feedback-content">
+                            <p class="feedback-name">
+                                Mariana Silveira
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>"Com o acompanhamento da Claudia, consegui alcançar meu peso ideal sem dietas radicais. Hoje me sinto mais saudável e feliz!"</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="src/images/hand-person-girl-hair-photography-female-419751-pxhere.com.jpg" class="feedback-avatar" alt="segunda foto de perfil das avaliações">
+
+                        <div class="feedback-content">
+                            <p class="feedback-name">
+                                Analice Ferreira
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>"Depois que comecei a seguir as dicas da Claudia, minha energia no trabalho e na academia mudou completamente. Parece que finalmente achei o equilíbrio!"</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="src/images/person-girl-woman-hair-photography-female-1393580-pxhere.com.jpg" class="feedback-avatar" alt="terceira foto de perfil das avaliações">
+
+                        <div class="feedback-content">
+                            <p class="feedback-name">
+                                Jéssica Duarte
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>"Eu sempre desistia das dietas porque eram complicadas demais. Com a Claudia, aprendi a fazer escolhas simples que realmente funcionam pra mim. Tô super feliz!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais Avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave (8).svg" alt="onda estilizada">
+
+        <div id="footer-items">
+            <span id="copyright">
+                &copy 2025 Eduardo Ribeiro
+            </span>
+
+            <div class="social_media_buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+#home {
+    display: flex; /*Para ficar lado a lado*/
+    min-height: calc(100vh - 91px); /*Calcular a altura mínima descontando a altura do navbar, nesse caso 91px*/
+    position: relative;
+    padding-bottom: 0;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: #1d1d1d;
+
+}
+#cta .title span {
+    color: #fff;
+
+}
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+#banner img {
+    height: 90%;
+    width: fit-content;
+}
+
+#shape {
+    background-color: #ffe8bf;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+    #cta .title {
+        font-size: 2.5rem;
+    
+    }
+    #cta .description {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1170px) {
+    #home {
+        display: flex;
+        min-height: calc(100vh - 91px);
+        padding: 0;
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+    }
+
+    #cta {
+        width: 60%; /* Garante espaço suficiente para o texto */
+        margin-left: 8%; /* Ajuste lateral, se necessário */
+        margin-top: 0;
+    }
+
+    #banner {
+        width: 85%; /* Ajusta o espaço para o banner */
+        align-items: center; /* Alinha a imagem */
+        justify-content: flex-end; /* Garante o alinhamento correto */
+    }
+
+    #banner img {
+        height: auto; /* Ajusta proporção da imagem */
+        max-width: 100%; /* Evita que a imagem ultrapasse o espaço */
+    }
+}

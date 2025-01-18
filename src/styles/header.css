@@ -90,4 +90,8 @@ header {
         list-style: none;
         text-align: center;
     }
+    .btn-default i {
+        font-size: 20px;
+        padding-right: 12px; /* Tamanho do ícone */
+    }
 }

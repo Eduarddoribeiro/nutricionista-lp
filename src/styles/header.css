@@ -76,11 +76,12 @@ header {
     #mobile_menu.active { /*Quando o menu estiver aberto*/
         display: flex;
         flex-direction: column; /*Exibir o menu um abaixo do outro*/
-        align-items: center;
+        align-items: start;
     }
 
     #mobile_nav_list {
         display: flex;
+        align-items: start;
         flex-direction: column;
         gap: 6px;
         margin: 12px 0px;
